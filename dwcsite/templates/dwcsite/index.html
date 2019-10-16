@@ -1,0 +1,595 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DreamWithCode</title>
+    <link rel="icon" href="{% static 'dwcsite/img/dwclogo.png' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/bootstrap.min.css' %}">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/animate.css'%}">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/owl.carousel.min.css'%}">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/themify-icons.css'%}">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/flaticon.css'%}">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/magnific-popup.css'%}">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/slick.css'%}">
+    <link rel="stylesheet" href="{% static 'dwcsite/css/all.css'%}">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{% static 'dwcsite/css/style.css'%}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<style>
+.imac-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.imac-graphic {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    width: 87%;
+    height: 85%;
+    margin: 3.3% 6.3% 0% 6.7%;
+    text-align: center;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.imac-graphic .imac-graphic-inner {
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+}
+.h-100 {
+    height: 100%!important;
+}
+.align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+}
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.imac {
+    z-index: 1;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.imac-graphic img.full-screen {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.imac-graphic img.active {
+    display: block;
+    opacity: 1;
+}
+.imac-graphic img {
+    margin: 20px 0;
+    padding: 3% 3% 3% 9%;
+    opacity: 0;
+    width: 95%;
+    height: auto;
+    display: none;
+}
+.mb-auto, .my-auto {
+    margin-bottom: auto!important;
+}
+.mt-auto, .my-auto {
+    margin-top: auto!important;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"> <img src="{% static 'dwcsite/img/dwclogo.png' %}" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'dwcsite:about' %}">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">Get Involved</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="banner_text">
+                        <div class="banner_text_iner text-center">
+                            <h2>Dream <span>With Code</span> </h2>
+                            <h4>Dont Just Dream... Code!</h4>
+
+                            <a href="#about" class="btn_1">learn more <i class="ti-angle-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                  <div class="banner_bg">
+									<div class="imac-wrap">
+
+							     <div class="imac-graphic">
+
+  								<div class="imac-graphic-inner h-100 align-items-center align-self-center justify-content-center">
+
+                  <!-- <video style="margin-bottom: 130px;"src="{% static 'dwc/img/dwc.mp4'%}" poster="{% static 'dwc/img/codingkids.jpg' %}" width="500" height="350" controls> </video> -->
+								<!-- <iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://player.vimeo.com/video/329701729?background=1"></iframe> -->
+
+
+								</div>
+							</div>
+							<img class="imac img-fluid" src="{% static 'dwcsite/img/kidbot.png' %}" alt="Kidbot">
+						</div>
+          </div>
+              </div>
+            </div>
+        </div>
+        <div class="hero-app-1 custom-animation"><img src="{% static 'dwcsite/img/animate_icon/scratch.png'%}" alt=""></div>
+        <div class="hero-app-5 custom-animation2"><img src="{% static 'dwcsite/img/animate_icon/icon_4.png'%}" alt=""></div>
+        <div class="hero-app-7 custom-animation3"><img src="{% static 'dwcsite/img/animate_icon/python.png'%}" alt=""></div>
+        <div class="hero-app-8 custom-animation"><img src="{% static 'dwcsite/img/animate_icon/htmlcss.png'%}" alt=""></div>
+    </section>
+
+
+    <!-- about part start-->
+    <section id = "about" class="about_part">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xl-6 col-md-6 col-sm-12">
+            <div class="imac-wrap">
+              <div class="imac-graphic">
+                <div class="imac-graphic-inner h-100 align-items-center align-self-center justify-content-center">
+                  <video style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="{% static 'dwcsite/img/dwc.mp4'%}" poster="{% static 'dwcsite/img/codingkids.jpg' %}" width="500" height="350" controls> </video>
+                  <!-- <iframe style="position: absolute; top: 0; left: 0;" width="100%" height="100%" src="https://player.vimeo.com/video/329701729?background=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe> -->
+                </div>
+              </div>
+              <img class="imac img-fluid" src="{% static 'dwcsite/img/laptop.png' %}" alt="Image of laptop">
+            </div>
+          </div>
+
+                <div class="col-xl-6 col-md-6 col-sm-12">
+                    <div class="about_text">
+                        <h2 style="color:blue;">Our Story</h2>
+                        <hr>
+                        <h4>DreamWithCode is a Community Based Organization(C.B.0) founded  with the aim of reaching out to children, especially those from underprivileged families, and teaching them how to write computer programs. The vision shared by the founders of the organization was to equip a generation with programming skills at an early age. </h4>
+                        <h4>The organization brings together young energetic experts in computing-related fields with the primary aim of providing a platform where they can impart their knowledge and experience while giving back to society and impacting the lives of the young ones.
+At DreamWithCode, we channel the immense creativity, dedication, and cohesion, from our team towards our mission.
+</h4>
+                        <a href="#" class="btn_1">learn more <i class="ti-angle-right"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-app-7 custom-animation"><img src="{% static 'dwcsite/img/animate_icon/icon_7.png' %}" alt=""></div>
+        <div class="hero-app-8 custom-animation2"><img src="{% static 'dwcsite/img/animate_icon/icon_4.png' %}" alt=""></div>
+        <div class="hero-app-6 custom-animation3"><img src="{% static 'dwcsite/img/animate_icon/icon_5.png' %}" alt=""></div>
+    </section>
+    <!-- about part start-->
+
+    <!-- service_part start-->
+    <section class="our_latest_work section_padding">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="section_tittle text-center">
+                        <h2 style="color:blue;">Our Core Values</h2>
+                        <hr>
+                        <h4 style="color:black;">“Coding is the language of the future, and every girl should learn it. As I've learned from watching girls grow and learn in our classrooms, coding is fun, collaborative and creative.”
+
+- Reshma Saujani</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="single_work">
+                        <div class="row align-items-center">
+                            <div class="offset-lg-1 col-lg-4 col-md-6">
+                                <div class="single_work_demo">
+                                    <h2 style="color:blue;">Mission </h2>
+                                    <hr>
+                                    <h3>To be the leading transformer of the lives of the young generation especially those living in the Kenyan Slums by teaching them computer programming skills.</h3>
+
+                                </div>
+                            </div>
+                            <div class="offset-lg-1 col-lg-6 col-md-6">
+                                <div class="demo_img">
+                                    <img src="{% static 'dwcsite/img/demo/kidscoding.jpg' %}" alt="demo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_work">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="demo_img">
+                                    <img src="{% static 'dwcsite/img/demo/shaleen.jpg' %}" alt="demo">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single_work_demo">
+                                    <h2 style="color:blue;">Vision</h2>
+                                    <hr>
+                                    <h3>To empower children and teenagers with the power code to build better lives for themselves and their families through computing and computer programming.</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single_work">
+                        <div class="row align-items-center">
+                            <div class="offset-lg-1 col-lg-4 col-md-6">
+                                <div class="single_work_demo">
+                                    <h2 style="color:blue;">Objective</h2>
+                                    <hr>
+                                    <h3>To reach out to as many underprivileged kids within society and teach them how to leverage technology to make better lives for themselves. </h3>
+
+                                </div>
+                            </div>
+                            <div class="offset-lg-1 col-lg-6 col-md-6">
+                                <div class="demo_img">
+                                    <img src="{%static 'dwcsite/img/demo/tigana.jpg' %}" alt="demo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- upcoming_event part start-->
+
+
+
+    <!-- portfolio_part start-->
+
+    <!-- cta part start-->
+    <section id="team"class="cta_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="cta_part_iner">
+                        <div class="cta_part_text">
+                            <h2 style="color:blue">DWC Team</h2>
+                            <hr>
+                            <h4 style="color:black;">“Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.”
+
+- Stephen Hawking</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta part end-->
+    <!-- team_member part start-->
+    <section class="team_member_section section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;"src="{% static 'dwcsite/img/team/martin.jpg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#"> Martin Mutwiri</a></h3>
+                            <p>Founder / Instructor</p>
+                            <div class="team_member_social_icon">
+
+                                <a href="https://www.linkedin.com/in/martinmuru/" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;" src="{% static 'dwcsite/img/team/tigs.jpg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Tigana Ochieng'</a></h3>
+                            <p>Co-Founder/ Instructor</p>
+                            <div class="team_member_social_icon">
+                                <a href="https://www.linkedin.com/in/tigana-ng-uono-340685182/" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;" src="{% static 'dwcsite/img/team/daisy.jpg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Daisy Chelangat</a></h3>
+                            <p>Public Relations Lead</p>
+                            <div class="team_member_social_icon">
+                              <a href="#"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;"src="{% static 'dwcsite/img/team/christine.jpeg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Christine Wanjiru</a></h3>
+                            <p>Curriculum Lead/ Instructor</p>
+                            <div class="team_member_social_icon">
+
+                                <a href="https://www.linkedin.com/in/christinewanjiru/" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;" src="{% static 'dwcsite/img/team/shaleen.jpg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Shaleen Ombriri</a></h3>
+                            <p>Secretary</p>
+                            <div class="team_member_social_icon">
+                                <a href="https://www.linkedin.com/in/shaleen-ombiri-a05825114/" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;" src="{% static 'dwcsite/img/team/juliet.jpg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Juliet Kariuki</a></h3>
+                            <p>Chief Of Fundraising</p>
+                            <div class="team_member_social_icon">
+                              <a href="https://www.linkedin.com/in/juliet-kariuki-17664387/" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;"src="{% static 'dwcsite/img/team/christine.jpeg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Edith Wangeci</a></h3>
+                            <p>Financial Manager</p>
+                            <div class="team_member_social_icon">
+
+                                <a href="#" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_team_member">
+                        <img style="height: 400px;" src="{% static 'dwcsite/img/team/collo.jpeg' %}" alt="">
+                        <div class="single_team_text">
+                            <h3><a href="#">Collins Njau</a></h3>
+                            <p>Curriculum Developer/ Instructor</p>
+                            <div class="team_member_social_icon">
+                                <a href="https://www.linkedin.com/in/collins-njau-software-developer-294831a7/" target="_blank"><i class="fab fa-lg fa-linkedin fa-2x"> </i></a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- team_member part end-->
+
+    <!-- footer part start-->
+    <footer id="contact"class="footer-area banner_part" >
+        <div class="container" >
+            <div class="row justify-content-between"  style="max-height:400px;">
+                <div class="col-sm-6 col-md-6 col-xl-3">
+                    <div class="single-footer-widget footer_1">
+                        <h3 style="color:#fff">Contact Us</h3>
+                        <hr style="color:#fff">
+                        <div class="media contact-info">
+                          <span class="contact-info__icon"><i class="ti-home"></i></span>
+                          <div class="media-body">
+                            <p>Mathare-Huruma Slum, along Juja Road behind Thayu petrol station</p>
+                          </div>
+                        </div>
+
+                        <div class="media contact-info">
+                          <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+                          <div class="media-body">
+                            <p>0701 128 503 - Martin Mutwiri </p>
+                            <p>or</p>
+                            <p>0702 189 860 - Daisy Chelangat</p>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xl-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>DWC Newsletter</h4>
+                        <p>Stay updated with our latest news
+                        </p>
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder='Enter email address'
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Enter email address'">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button"><i class="ti-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="social_icon">
+                            <a href="#"> <i class="ti-facebook"></i> </a>
+                            <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                            <a href="#"> <i class="ti-instagram"></i> </a>
+                            <a href="#"> <i class="ti-skype"></i> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-xl-3">
+                    <div class="single-footer-widget footer_3">
+                        <h4>Quick Links</h4>
+									<ul class="list-link">
+										<li><a href="/">Home</a></li>
+										<li><a href="#about">About US</a></li>
+										<li><a href="#team">The Team</a></li>
+										<li><a href="#">Get Involved</a></li>
+									</ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright_part_text text-center">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made  by <a href="https://colorlib.com" target="_blank">Martin</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="{% static 'dwcsite/js/jquery-1.12.1.min.js' %}"></script>
+    <!-- popper js -->
+    <script src="{% static 'dwcsite/js/popper.min.js' %}"></script>
+    <!-- bootstrap js -->
+    <script src="{% static 'dwcsite/js/bootstrap.min.js'%}"></script>
+    <!-- easing js -->
+    <script src="{% static 'dwcsite/js/jquery.magnific-popup.js'%}"></script>
+    <!-- swiper js -->
+    <script src="{% static 'dwcsite/js/swiper.min.js'%}"></script>
+    <!-- swiper js -->
+    <script src="{% static 'dwcsite/js/masonry.pkgd.js'%}"></script>
+    <!-- particles js -->
+    <script src="{% static 'dwcsite/js/owl.carousel.min.js'%}"></script>
+    <script src="{% static 'dwcsite/js/jquery.counterup.min.js'%}"></script>
+    <script src="{% static 'dwcsite/js/waypoints.min.js'%}"></script>
+    <script src="{% static 'dwcsite/js/owl.carousel2.thumbs.min.js'%}"></script>
+    <!-- swiper js -->
+    <script src="{% static 'dwcsite/js/slick.min.js'%}"></script>
+    <!-- custom js -->
+    <script src="{% static 'dwcsite/js/custom.js'%}"></script>
+</body>
+
+</html>
